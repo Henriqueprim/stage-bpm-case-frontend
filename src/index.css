@@ -1,0 +1,102 @@
+.providerflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.providerflow aside {
+  padding: 0px 15px 0px 15px;
+  font-size: 15px;
+  height: 100vh;
+  border-right: 2px solid #a7a4a4;
+}
+
+.providerflow aside .title {
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.providerflow aside .subtitle {
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.processNameInput {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #a7a4a4;
+  padding: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+.savebutton {
+  margin-top: 20px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 10;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.clearbutton {
+  top: 20px;
+  right: 50px;
+  position: absolute;
+  z-index: 10;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .providerflow {
+    flex-direction: row;
+  }
+
+  .providerflow aside {
+    width: 20vw;
+  }
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
