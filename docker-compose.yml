@@ -1,0 +1,23 @@
+version: "3"
+services:
+  frontend:
+    build: ./
+    ports:
+      - 5173:5173
+    platform: linux/x86_64
+    working_dir: /app
+    # Mesmo que `docker run -t`
+    tty: true
+    # Mesmo que `docker run -i`
+    stdin_open: true
+    volumes:
+      # Monta o diretório atual, com todos os dados do projeto, 
+      # dentro do diretório /app
+      - ./:/app
+# Lista de redes que os containeres irão utilizar
+networks:
+  # Rede padrão, criada automaticamente
+  default:
+    # Dá um nome específico à rede padrão
+    name: bpm_network
+    external: true
